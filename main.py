@@ -99,7 +99,7 @@ def start(message):
         markups.add(telebot.types.InlineKeyboardButton(
             text='🤼‍♂️ Joined', callback_data='check'))
         msg_start = "*🍔 To Use This Bot You Need To Join This Channel - \n➡️ https://t.me/varieti1:https://t.me/hotmediablog*",
-                         parse_mode="Markdown", reply_markup=markups)
+                         parse_mode="Markdown", reply_markup="markups")
    except:
         bot.send_message(message.chat.id, "This command having error pls wait for ficing the glitch by admin")
         bot.send_message(OWNER_ID, "Your bot got an error fix it fast!\n Error on command: "+message.text)
